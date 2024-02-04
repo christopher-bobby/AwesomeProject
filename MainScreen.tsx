@@ -3,12 +3,12 @@ import { StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native';
 import WebSocketComponent from './components/WebSocketComponent';
 import { CryptoData, LastChanges } from './types';
-import { symbolString } from './common';
-
+import { symbolString } from './common/variables';
+import { globalStyles } from './common/globalStyles';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#000',
+    backgroundColor: globalStyles.color.black,
     flex: 1
   },
 });

@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { CryptoData, LastChanges } from '../types';
-import { symbols, symbolString } from '../common';
+import { symbols, symbolString } from '../common/variables';
+import { globalStyles } from '../common/globalStyles';
 
 interface CryptoPrices {
   [key: string]: number;
@@ -11,7 +12,7 @@ interface CryptoPrices {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#000',
+    backgroundColor: globalStyles.color.black,
     flex: 1
   },
   columnWidth: {
@@ -27,7 +28,6 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.7)',
     textAlign: 'left',
     width: Dimensions.get('window').width / 3
-
   },
   alignRight: {
     textAlign: 'right'
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   element: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#fff',
+    color: globalStyles.color.white,
   },
   priceContainer: {
     flexDirection: 'row',
@@ -53,18 +53,18 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.7)',
   },
   prices: {
-    color: '#fff',
+    color: globalStyles.color.white,
     fontSize: 16,
     fontWeight: 'bold'
   },
   last24HoursChange: {
-    color: 'red'
+    color: globalStyles.color.red
   },
   priceDown: {
-    color: 'red'
+    color: globalStyles.color.red
   },
   priceUp: {
-    color: 'green'
+    color: globalStyles.color.green
   }
 });
   

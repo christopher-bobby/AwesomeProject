@@ -1,11 +1,15 @@
 import { StyleSheet, Text, View, Dimensions, ScrollView,TouchableOpacity } from 'react-native';
 import Candlestick from './components/Candlestick';
 import CoincapOrderBook from './components/CoincapOrderBook';
+import { globalStyles } from './common/globalStyles';
 
 const styles = StyleSheet.create({
-
+  container: {
+    backgroundColor: globalStyles.color.black,
+    color: globalStyles.color.white
+  },
   buttonContainer: {
-    backgroundColor: '#fff',
+    backgroundColor: globalStyles.color.black,
     padding: 10,
     paddingBottom: 25,
     flexDirection: 'row',
@@ -16,21 +20,21 @@ const styles = StyleSheet.create({
     width: Dimensions.get('window').width
   },
   buyButton: {
-    backgroundColor: '#008000',
+    backgroundColor: globalStyles.color.green,
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 5,
     marginRight: 10,
   },
   sellButton: {
-    backgroundColor: '#FF0000E6',
+    backgroundColor: globalStyles.color.red,
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 5,
     marginLeft: 10,
   },
   buttonText: {
-    color: '#fff',
+    color: globalStyles.color.white,
     fontSize: 18,
     fontWeight: 'bold',
   },
@@ -41,7 +45,7 @@ const styles = StyleSheet.create({
 const CandlestickChartPage = () => {
 
   return (
-    <View>
+    <View style={styles.container}>
       <ScrollView>
         <Candlestick />
         <CoincapOrderBook />
