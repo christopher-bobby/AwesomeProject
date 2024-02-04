@@ -20,3 +20,10 @@ Upon clicking one of the coins, it'll show the candlestick and order book page u
 - Some of the data is dummy, but the price update is real, using socket connection. 
 - Initial price data is fetched using normal http request, followed by socket connection for real price update.
 - The application is tested against simulator on iOS and real device on Android. 
+
+
+# Future improvement:
+- Add more features and screens.
+- Better coverage at tests.
+- Replace dummy data with real data, preferrably from socket connection.
+- Overall UI/UX.

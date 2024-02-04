@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View, Dimensions, ScrollView,TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, ScrollView, TouchableOpacity } from 'react-native';
 import Candlestick from './components/Candlestick';
-import CoincapOrderBook from './components/CoincapOrderBook';
+import OrderBook from './components/OrderBook';
 import { globalStyles } from './common/globalStyles';
 
 const styles = StyleSheet.create({
@@ -48,7 +48,7 @@ const CandlestickChartPage = () => {
     <View style={styles.container}>
       <ScrollView>
         <Candlestick />
-        <CoincapOrderBook />
+        <OrderBook />
       </ScrollView>
       <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.buyButton}>

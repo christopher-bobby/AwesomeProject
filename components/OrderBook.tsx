@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const CoincapOrderBook = () => {
+const OrderBook = () => {
 
   return (
     <View style={styles.container}>
@@ -97,4 +97,4 @@ const CoincapOrderBook = () => {
   );
 };
 
-export default CoincapOrderBook;
+export default OrderBook;
