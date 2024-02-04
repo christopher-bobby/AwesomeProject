@@ -27,3 +27,7 @@ Upon clicking one of the coins, it'll show the candlestick and order book page u
 - Better coverage at tests.
 - Replace dummy data with real data, preferrably from socket connection.
 - Overall UI/UX.
+
+
+<img width="495" alt="Screenshot 2024-02-04 at 5 11 44 PM" src="https://github.com/christopher-bobby/AwesomeProject/assets/13780904/a9756cbb-1a5b-4be3-a81c-d16f880deda2">
+<img width="508" alt="Screenshot 2024-02-04 at 11 09 33 PM" src="https://github.com/christopher-bobby/AwesomeProject/assets/13780904/36b0b540-bb56-4a99-8482-35b5de4849d9">
