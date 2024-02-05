@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet } from 'react-native';
-import { ScrollView } from 'react-native';
-import WebSocketComponent from './src/components/WebSocketComponent';
-import { CryptoData, LastChanges } from './src/types';
-import { symbolString } from './src/common/variables';
-import { globalStyles } from './src/common/globalStyles';
+import { StyleSheet, ScrollView } from 'react-native';
+import WebSocketCryptoPrice from '../components/WebSocketCryptoPrice';
+import { CryptoData, LastChanges } from '../types';
+import { symbolString } from '../common/variables';
+import { globalStyles } from '../common/globalStyles';
 
 const styles = StyleSheet.create({
   container: {
@@ -64,7 +63,7 @@ const MainScreen: React.FC = () => {
 
     return (
         <ScrollView style={styles.container}>
-            <WebSocketComponent initialPrice={cryptoData} last24HoursChanges={last24HoursChanges} />
+            <WebSocketCryptoPrice initialPrice={cryptoData} last24HoursChanges={last24HoursChanges} />
         </ScrollView>
     );
 };

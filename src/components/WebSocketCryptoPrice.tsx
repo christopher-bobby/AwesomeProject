@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   }
 });
   
-const WebSocketComponent: React.FC<{initialPrice: CryptoData, last24HoursChanges: LastChanges}> = ({ initialPrice, last24HoursChanges }) => {
+const WebSocketCryptoPrice: React.FC<{initialPrice: CryptoData, last24HoursChanges: LastChanges}> = ({ initialPrice, last24HoursChanges }) => {
   const [cryptoPrices, setCryptoPrices] = useState<CryptoPrices>({});
 
   const termMap: { [key: string]: [string, string] } = {
@@ -154,4 +154,4 @@ const WebSocketComponent: React.FC<{initialPrice: CryptoData, last24HoursChanges
   );
 };
 
-export default WebSocketComponent;
+export default WebSocketCryptoPrice;

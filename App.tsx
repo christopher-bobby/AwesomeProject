@@ -2,8 +2,8 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import CandlestickChartPage from './CandlestickChartPage';
-import MainScreen from './MainScreen';
+import CandlestickChartPage from './src/screens/CandlestickChartPage';
+import MainScreen from './src/screens/MainScreen';
 
 const Stack = createStackNavigator();
 

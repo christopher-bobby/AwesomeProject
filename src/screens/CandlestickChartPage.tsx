@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, Dimensions, ScrollView, TouchableOpacity } from 'react-native';
-import Candlestick from './src/components/Candlestick';
-import OrderBook from './src/components/OrderBook';
-import { globalStyles } from './src/common/globalStyles';
+import Candlestick from '../components/Candlestick';
+import OrderBook from '../components/OrderBook';
+import { globalStyles } from '../common/globalStyles';
 
 const styles = StyleSheet.create({
   container: {
