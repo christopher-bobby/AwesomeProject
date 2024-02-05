@@ -7,7 +7,6 @@ interface Colors {
     }
 }
   
-
 export const globalStyles: Colors = {
     color: {
         red: '#FF0000E6',

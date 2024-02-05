@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import { ScrollView } from 'react-native';
-import WebSocketComponent from './components/WebSocketComponent';
-import { CryptoData, LastChanges } from './types';
-import { symbolString } from './common/variables';
-import { globalStyles } from './common/globalStyles';
+import WebSocketComponent from './src/components/WebSocketComponent';
+import { CryptoData, LastChanges } from './src/types';
+import { symbolString } from './src/common/variables';
+import { globalStyles } from './src/common/globalStyles';
 
 const styles = StyleSheet.create({
   container: {

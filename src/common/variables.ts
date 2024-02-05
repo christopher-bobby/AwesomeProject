@@ -1,4 +1,3 @@
-
 export const symbols: string[] = [
     'bitcoin',
     'ethereum',
@@ -8,4 +7,5 @@ export const symbols: string[] = [
     'xrp',
     'dogecoin',
 ];
+
 export const symbolString: string = symbols.join(',');
