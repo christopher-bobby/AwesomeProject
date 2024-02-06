@@ -2,13 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet } from 'react-native';
 import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { CryptoData, LastChanges } from '../types';
+import { CryptoData, LastChanges, CryptoPrices } from '../types';
 import { symbols, symbolString } from '../common/variables';
 import { globalStyles } from '../common/globalStyles';
-
-interface CryptoPrices {
-  [key: string]: number;
-}
 
 const styles = StyleSheet.create({
   container: {

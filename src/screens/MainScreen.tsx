@@ -3,6 +3,7 @@ import { StyleSheet, ScrollView } from 'react-native';
 import WebSocketCryptoPrice from '../components/WebSocketCryptoPrice';
 import { CryptoData, LastChanges } from '../types';
 import { symbolString } from '../common/variables';
+import { BTC, ETH, BNB, ADA, SOL, XRP, DOGE } from '../common/constants'
 import { globalStyles } from '../common/globalStyles';
 
 const styles = StyleSheet.create({
@@ -45,7 +46,8 @@ const MainScreen: React.FC = () => {
 
                 data.data.forEach((asset: any) => {
                     let symbol = asset.symbol;
-                    if (symbol === 'BTC' || symbol === 'ETH' || symbol === 'BNB' || symbol === 'ADA' || symbol === 'SOL' || symbol === 'XRP' || symbol === 'DOGE') {
+                    let includedSymbol = symbol === BTC || symbol === ETH || symbol === BNB || symbol === ADA || symbol === SOL || symbol === XRP || symbol === DOGE
+                    if (includedSymbol) {
                         prices[asset.id.toLowerCase()] = parseFloat(asset.priceUsd).toFixed(2);
                         lastChanges[asset.id.toLowerCase()] = parseFloat(asset.changePercent24Hr).toFixed(2); 
                     }

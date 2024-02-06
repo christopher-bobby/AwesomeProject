@@ -11,3 +11,7 @@ export interface CryptoData {
 export interface LastChanges {
     [key: string]: any;
 }
+export interface CryptoPrices {
+    [key: string]: number;
+}
+  
